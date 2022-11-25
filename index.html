@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Poppy's Heal</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="dist/jquery.convform.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="demo.css">
+</head>
+<body>
+	<section id="demo">
+	    <div class="vertical-align">
+	        <div class="container">
+	            <div class="row">
+	                <div class="col-sm-6 col-sm-offset-3 col-xs-offset-0">
+	                    <div class="card no-border">
+	                        <div id="chat" class="conv-form-wrapper">
+	                            <form action="" method="GET" class="hidden">
+									<input type="text" name="howRU" data-conv-question="สวัสดี ! วันนี้คุณเป็นอย่างไรบ้าง?">
+	                                <select data-conv-question="คุณต้องการทำแบบทดสอบไหม" name="welcome-question">
+	                                    <option value="yes">ใช่ ฉันต้องการทำแบบทดสอบ</option>
+
+
+	                                </select>
+									<!-- qustetion 1 -->
+									<select data-conv-question="ในช่วง 2 สัปดาห์ที่ผ่านมา คุณรู้สึกเศร้า เบื่อ ท้อแท้ หรือหงุดหงิดง่ายอย่างต่อเนื่อง" name="first-question">
+	                                    <option value="0" question="q1-never">ไม่เคย</option>
+										<option value="1" question="q1-sometime">บางครั้ง</option>
+										<option value="2" question="q1-usually" >บ่อยครั้ง</option>
+										<option value="3" question="q1-always">บ่อยมาก(ทุกวัน)</option>
+	                                </select>
+									<!-- qustetion 2 -->
+									<select data-conv-question="คุณเลิกสนใจสิ่งที่เคยชอบมากๆ หรือไม่อยากทำสิ่งที่เคยชอบทำ" name="second-question">
+										<option value="0" question="q2-never">ไม่เคย</option>
+										<option value="1" question="q2-sometime">บางครั้ง</option>
+										<option value="2" question="q2-usually">บ่อยครั้ง</option>
+										<option value="3" question="q2-always">บ่อยมาก(ทุกวัน)</option>
+									</select>
+									<!-- qustetion 3 -->
+									<select data-conv-question="คุณมีพฤติกรรมการกินเปลี่ยนไป กินมากไป กินน้อยไป จนทำให้น้ำหนักขึ้นหรือลงผิดปกติ" name="third-four">
+										<option value="0" question= "q3-never">ไม่เคย</option>
+										<option value="1" question= "q3-sometime">บางครั้ง</option>
+										<option value="2" question= "q3-usually">บ่อยครั้ง</option>
+										<option value="3" question= "q3-always">บ่อยมาก(ทุกวัน)</option>
+									</select>
+									<!-- qustetion 4 -->
+									<select data-conv-question="คุณรู้สึกว่าจากที่เคยหลับง่ายก็หลับยากขึ้น หรือไม่ก็นอนมากเกินไป" name="question-four">
+										<option value="0" question= "q4-never">ไม่เคย</option>
+										<option value="1" question= "q4-sometime">บางครั้ง</option>
+										<option value="2" question= "q4-usually">บ่อยครั้ง</option>
+										<option value="3" question= "q4-always">บ่อยมาก(ทุกวัน)</option>
+									</select>
+									<!-- qustetion 5 -->
+									<select data-conv-question="คุณมีอาการกระวนกระวายหรือเฉื่อยชาที่แสดงออกให้เห็นชัด" name="question-five">
+										<option value="0" question= "q5-never">ไม่เคย</option>
+										<option value="1" question= "q5-sometime">บางครั้ง</option>
+										<option value="2" question= "q5-usually">บ่อยครั้ง</option>
+										<option value="3" question= "q5-always">บ่อยมาก(ทุกวัน)</option>
+									</select>
+									<!-- qustetion 6 -->
+									<select data-conv-question="คุณรู้สึกหมดเรี่ยวแรง ไม่มีพลัง ไม่อยากลุกขึ้นมาทำอะไรเลย" name="question-six">
+										<option value="0" question= "q6-never">ไม่เคย</option>
+										<option value="1" question= "q6-sometime">บางครั้ง</option>
+										<option value="2" question= "q6-usually">บ่อยครั้ง</option>
+										<option value="3" question= "q6-always">บ่อยมาก(ทุกวัน)</option>
+									</select>
+									<!-- qustetion 7 -->
+									<select data-conv-question="คุณรู้สึกไร้ค่าหรือรู้สึกผิด โทษตัวเองในทุก ๆ เรื่อง" name="question-seven">
+										<option value="0" question= "q7-never">ไม่เคย</option>
+										<option value="1" question= "q7-sometime">บางครั้ง</option>
+										<option value="2" question= "q7-usually">บ่อยครั้ง</option>
+										<option value="3" question= "q7-always">บ่อยมาก(ทุกวัน)</option>
+									</select>
+									<!-- qustetion 8 -->
+									<select data-conv-question="คุณไม่มีสมาธิในการทำสิ่งต่างๆ มีปัญหาเรื่องการคิดหรือตัดสินใจ" name="question-eight">
+										<option value="0" question= "q8-never">ไม่เคย</option>
+										<option value="1" question= "q8-sometime">บางครั้ง</option>
+										<option value="2" question= "q8-usually">บ่อยครั้ง</option>
+										<option value="3" question= "q8-always">บ่อยมาก(ทุกวัน)</option>
+									</select>
+									<!-- qustetion 9 -->
+									<select data-conv-question="คุณคิดถึงความตายหรืออยากตาย หรืออยากฆ่าตัวตายบ่อยๆ" name="question-nine">
+										<option value="0" question= "q9-never">ไม่เคย</option>
+										<option value="1" question= "q9-sometime">บางครั้ง</option>
+										<option value="2" question= "q9-usually">บ่อยครั้ง</option>
+										<option value="3" question= "q9-always">บ่อยมาก(ทุกวัน)</option>
+									</select>
+									
+									<!-- check total -->
+									<select data-conv-question="ตรวจสอบผลการทดสอบของคุณ" name="dynamic-question">
+	                                    <option value="total">ผลลัพธ์</option>
+	                                </select>
+									
+									
+	                            </form>
+	                        </div>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	    </div>
+	</section>
+	<script type="text/javascript" src="jquery-1.12.3.min.js"></script>
+	<script type="text/javascript" src="dist/autosize.min.js"></script>
+	<script type="text/javascript" src="dist/jquery.convform.js"></script>
+
+	<script>
+	
+	</script>
+	<script>
+		jQuery(function($){
+			// convForm = $('#chat').convform({selectInputStyle: 'disable'});
+			// console.log(convForm);
+			var total_answer = 0;
+			var count = 0;
+			var convForm = $('#chat').convform({eventList:{onInputSubmit: function(convState, ready) {
+				console.log('input is being submitted...');
+		        if(convState.current.answer.value==='END') {
+					convState.current.next = false;
+					setTimeout(ready, Math.random()*500+100);
+					
+					
+		        } else {
+
+					if(Array.isArray(convState.current.answer)) var answer = convState.current.answer.join(', ');
+					else var answer = convState.current.answer.text;
+						var answer_value = convState.current.answer.value;
+						var matches = answer_value.match(/(\d+)/);
+						if (matches) {
+							total_answer += parseInt(answer_value);
+						}
+						
+						if(answer_value === "total"){
+		
+							// convState.current.next = false;
+							if(total_answer >= 0 && total_answer <= 4){
+								convState.current.next = convState.newState({
+									type: 'select',
+									noAnswer: true,
+									name: 'dynamic-question-'+count,
+									questions: ['คะแนนของคุณคือ ' + total_answer ],
+								});
+								convState.current.next.next = convState.newState({
+								type: 'select',
+								name: 'dynamic-question-'+count,
+								questions: ['คุณไม่มีอาการซึมเศร้าหรือมีก็เพียงเล็กน้อย ไม่จำเป็นต้องรักษาออกกำลังกายสม่ำเสมอ ทำกิจกรรมที่ทำให้ผ่อนคลาย'],
+								answers: [
+									{text: 'END', value: 'end'}
+								]
+								});
+						}else if(total_answer >= 5 && total_answer <= 8){
+							convState.current.next = convState.newState({
+									type: 'select',
+									noAnswer: true,
+									name: 'dynamic-question-'+count,
+									questions: ['คะแนนของคุณคือ ' + total_answer ],
+								});
+								convState.current.next.next = convState.newState({
+								type: 'select',
+								name: 'dynamic-question-'+count,
+								questions: ['คุณมีอาการซึมเศร้าระดับเล็กน้อยควรพักผ่อนให้เพียงพอ นอนหลับให้ได้6-8 ชั่วโมงออกกำลังกายสม่ำเสมอ ทำกิจกรรมที่ทำให้ผ่อนคลายพบปะเพื่อนฝูง ควรทำแบบประเมินอีกครั้งใน 1 สัปดาห์'],
+								answers: [
+									{text: 'END', value: 'end'}
+								]
+								});
+						}else if(total_answer >= 9 && total_answer <= 14){
+							convState.current.next = convState.newState({
+									type: 'select',
+									noAnswer: true,
+									name: 'dynamic-question-'+count,
+									questions: ['คะแนนของคุณคือ ' + total_answer ],
+								});
+								convState.current.next.next = convState.newState({
+								type: 'select',
+								name: 'dynamic-question-'+count,
+								questions: ['คุณมีอาการซึมเศร้าระดับปานกลางควรพักผ่อนให้เพียงพอ นอนหลับให้ได้6-8 ชั่วโมง ออกกำลังกายสม่ำเสมอหรือทำกิจกรรมที่ทำให้ผ่อนคลาย พบปะเพื่อนฝูง ควรขอคำปรึกษาช่วยเหลือจากผู้ที่ไว้วางใจ ไม่จมอยู่กับปัญหา หากอาการที่คุณเป็นมีผลกระทบต่อการทำงานหรือการเข้าสังคม หรือหากคุณมีอาการระดับนี้มานาน 1-2 สัปดาห์แล้วยังไม่ดีขึ้น ควรพบแพทย์เพื่อรับการช่วยเหลือรักษา'],
+								answers: [
+									{text: 'END', value: 'end'}
+								]
+								});
+						}else if(total_answer >= 15 && total_answer <= 19){
+							convState.current.next = convState.newState({
+									type: 'select',
+									noAnswer: true,
+									name: 'dynamic-question-'+count,
+									questions: ['คะแนนของคุณคือ ' + total_answer ],
+								});
+								convState.current.next.next = convState.newState({
+								type: 'select',
+								name: 'dynamic-question-'+count,
+								questions: ['คุณมีอาการซึมเศร้าระดับรุนแรงค่อนข้างมาก ควรพบแพทย์เพื่อประเมินอาการและให้การรักษา ระหว่างนี้ควรพักผ่อนให้เพียงพอ ออกกำลังกายเบาๆ ทำกิจกรรมที่ทำให้ผ่อนคลาย ไม่เก็บตัว และควรขอคำปรึกษาช่วยเหลือจากผู้ใกล้ชิด'],
+								answers: [
+									{text: 'END', value: 'end'}
+								]
+								});
+						}else if(total_answer >= 20 && total_answer <= 27){
+							convState.current.next = convState.newState({
+									type: 'select',
+									noAnswer: true,
+									name: 'dynamic-question-'+count,
+									questions: ['คะแนนของคุณคือ ' + total_answer ],
+								});
+								convState.current.next.next = convState.newState({
+								type: 'select',
+								name: 'dynamic-question-'+count,
+								questions: ['คุณมีอาการซึมเศร้าระดับรุนแรงมาก ต้องพบแพทย์เพื่อประเมินอาการและให้การรักษาโดยเร็ว ไม่ควรปล่อยทิ้งไว้'],
+								answers: [
+									{text: 'END', value: 'end'}
+								]
+								});	
+					}
+				}
+							setTimeout(ready, Math.random()*500+100);
+		        }
+		        count++;
+		    }}});
+		});
+	</script>
+</body>
+</html>
